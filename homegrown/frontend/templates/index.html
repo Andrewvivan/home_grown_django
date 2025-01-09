@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        {% load static %}
+        <link rel="shortcut icon" href="{% static 'img/plant-fill.png' %}" type="image/x-icon">
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+        <title>Home Grown - Andrew Vivan X</title>
+    </head>
+    <body>
+        
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <i class="ri-plant-fill"></i>HOME GROWN 
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#Products" class="nav__link">Products</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#Crops" class="nav__link">Crops</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#Guidance" class="nav__link">Guidance</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">Contact Us</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="https://webchat.botframework.com/embed/homegrownqna-bot/gemini?b=homegrownqna-bot&s=od70UgJ3vEU.P7wIf8KEn-gLQ5mLwmQplDERoSnaE9NkZNCLcoov-mo&username=You" class="nav__link">QnA Bot</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <img src="{% static 'assets/img/home.png' %}" alt="" class="home__img">
+
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            "Choose Fresh" <br> "Grow Fresh" <br> "Eat Fresh"
+                        </h1>
+                        <p class="home__description">
+                            "Are you ready to plant the seeds of love and let our hearts blossom together? 
+                            Explore the beauty of house farming & harvesting on my website, where we cultivate a 
+                            garden of lasting connections and build homes of happiness side by side."
+                         
+                        </p>
+                        <a href="#about" class="button button--flex">
+                            Explore <i class="ri-arrow-right-down-line button__icon"></i>
+                        </a>
+                    </div>
+                    <div class="home__social">
+                        <span class="home__social-follow">Follow Us</span>
+
+                        <div class="home__social-links">
+                            <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section container" id="about">
+                <div class="about__container grid">
+                    <img src="{% static 'assets/img/about.png' %}" alt="" class="about__img">
+
+                    <div class="about__data">
+                        <h2 class="section__title about__title">
+                            Why House Farming & <br> Why to choose Home Grown
+                        </h2>
+
+                        <p class="about__description">
+                            House farming offers numerous benefits, 
+                            including access to fresh, organic produce, 
+                            reduced carbon footprint by decreasing food transportation, 
+                            and increased food security and self-sufficiency for 
+                            individuals and communities.
+                        </p>
+
+                        <div class="about__details">
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Fresh, viable, and Feasible products and crops. 
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                We always deliver on time.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                We give you guides to protect and care for your plants.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                We always come over for a check-up after sale.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                100% money back guaranteed.
+                            </p>
+                        </div>
+
+                        <a href="#" class="button--link button--flex">
+                            Shop Now <i class="ri-arrow-right-down-line button__icon"></i>
+                        </a>
+                    </div>
+
+                    
+                </div>
+            </section>
+
+            <!--==================== STEPS ====================-->
+            <section class="steps section container">
+                <div class="steps__bg">
+                    <h2 class="section__title-center steps__title">
+                        Steps to start indoor planting with <br> "HOME GROWN"
+                    </h2>
+
+                    <div class="steps__container grid">
+                        <div class="steps__card">
+                            <div class="steps__card-number">01</div>
+                            <h3 class="steps__card-title">Choose Your Harvesting Space</h3>
+                            <p class="steps__card-description">
+                                We offer guidance to help you choose your ideal planting space. 
+                            </p>
+                        </div>
+                        <div class="steps__card">
+                            <div class="steps__card-number">02</div>
+                            <h3 class="steps__card-title">Choose Your planting Models and Tools</h3>
+                            <p class="steps__card-description">
+                                We have a wide array of harvesting models and tools which makes your work simpler.
+                            </p>
+                        </div>
+
+                        <div class="steps__card">
+                            <div class="steps__card-number">03</div>
+                            <h3 class="steps__card-title">Select your preferred type of crops</h3>
+                            <p class="steps__card-description">
+                                We offer a diverse selection of herbs, plants, and vegetable crops to kickstart your harvesting journey.  
+                            </p>
+                        </div>
+                        
+                        <div class="steps__card">
+                            <div class="steps__card-number">04</div>
+                            <h3 class="steps__card-title">Place your order</h3>
+                            <p class="steps__card-description">
+                                Once your order is set, we move to the next step which is the shipping.
+                            </p>
+                        </div>
+
+                        <div class="steps__card">
+                            <div class="steps__card-number">05</div>
+                            <h3 class="steps__card-title">Get plants delivered</h3>
+                            <p class="steps__card-description">
+                                Our delivery process is easy, you receive the order direct to your door.
+                            </p>
+                        </div>
+
+                        <div class="steps__card">
+                            <div class="steps__card-number">06</div>
+                            <h3 class="steps__card-title">Monitor and care </h3>
+                            <p class="steps__card-description">
+                                Are you a diligent gardener? Because just like you, 
+                                I'll monitor and care for our crops in this home-harvesting adventure, 
+                                ensuring our love blooms as beautifully as our plants.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PRODUCTS ====================-->
+            <section class="product section container" id="Products">
+                <h2 class="section__title-center">
+                    Check out our products
+                </h2>
+
+                <p class="product__description">
+                    Here are some selected products from our showroom, all are in excellent 
+                    shape and has a long life span. Buy and enjoy best quality.
+                </p>
+
+                <div class="product__container grid">
+                    <article class="product__card">
+                        <img src="{% static 'assets/img/product1.png' %}" alt="" class="product__img">
+                        <h3 class="product__title">Rectangle Planter</h3>
+                        <span class="product__price">$6.99</span>
+                        <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+                
+                    <article class="product__card">
+                        <img src="{% static 'assets/img/product2.png' %}" alt="" class="product__img">
+                        <h3 class="product__title">Designer Pots</h3>
+                        <span class="product__price">$2.99</span>
+                        <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+                
+                    <article class="product__card">
+                        <img src="{% static 'assets/img/product3.png' %}" alt="" class="product__img">
+                        <h3 class="product__title">Grow Light Table</h3>
+                        <span class="product__price">$7.99</span>
+                        <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+                
+                    <article class="product__card">
+                        <img src="{% static 'assets/img/product4.png' %}" alt="" class="product__img">
+                        <h3 class="product__title">Garden Toolkit</h3>
+                        <span class="product__price">$4.99</span>
+                        <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+                
+                    <article class="product__card">
+                        <img src="{% static 'assets/img/product5.png' %}" alt="" class="product__img">
+                        <h3 class="product__title">Water Sprinkler</h3>
+                        <span class="product__price">$1.99</span>
+                        <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+                
+                    <article class="product__card">
+                        <img src="{% static 'assets/img/product6.png' %}" alt="" class="product__img">
+                        <h3 class="product__title">Organic Soil </h3>
+                        <span class="product__price">$3.99</span>
+                        <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+                
+                    <article class="product__card">
+                        <img src="{% static 'assets/img/product7.png' %}" alt="" class="product__img">
+                        <h3 class="product__title">Hydropoic System </h3>
+                        <span class="product__price">$8.99</span>
+                        <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+                
+                    <article class="product__card">
+                        <img src="{% static 'assets/img/product8.png' %}" alt="" class="product__img">
+                        <h3 class="product__title">Organic Fertilizers </h3>
+                        <span class="product__price">$3.99</span>
+                        <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+                
+                    <article class="product__card">
+                        <img src="{% static 'assets/img/product9.png' %}" alt="" class="product__img">
+                        <h3 class="product__title">Solar Battery </h3>
+                        <span class="product__price">$5.99</span>
+                        <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+                </div>
+                
+            </section>
+            
+                                  <!--Hurbs under crops-->
+            <section class="Crops section container" id="Crops">
+            <h2 class="section__title-center">
+                "Herbs"
+            </h2>
+            <p class="Crops__description">
+                Here are some selected Herbs from our showroom, all are so fresh and healthy.
+            </p>
+
+            <div class="Crops__container grid">
+                <article class="Crops__card">
+                    <div class="Crops__circle"></div>
+                    <img src="{% static 'assets/img/mint.png' %}" alt="" class="Crops__img">
+                    <h3 class="Crops__title">Mint</h3>
+                    <span class="Crops__price">$0.99</span>
+                    <button class="button--flex Crops__button">
+                        <i class="ri-shopping-bag-line"></i>
+                    </button>
+                </article>
+            
+                <article class="Crops__card">
+                    <div class="Crops__circle"></div>
+                    <img src="{% static 'assets/img/coriander.png' %}" alt="" class="Crops__img">
+                    <h3 class="Crops__title">Coriander</h3>
+                    <span class="Crops__price">$0.99</span>
+                    <button class="button--flex Crops__button">
+                        <i class="ri-shopping-bag-line"></i>
+                    </button>
+                </article>
+            
+                <article class="Crops__card">
+                    <div class="Crops__circle"></div>
+                    <img src="{% static 'assets/img/oregano.png' %}" alt="" class="Crops__img">
+                    <h3 class="Crops__title">Oregano</h3>
+                    <span class="Crops__price">$0.99</span>
+                    <button class="button--flex Crops__button">
+                        <i class="ri-shopping-bag-line"></i>
+                    </button>
+                </article>
+            
+                <article class="Crops__card">
+                    <div class="Crops__circle"></div>
+                    <img src="{% static 'assets/img/curryleaf.png' %}" alt="" class="Crops__img">
+                    <h3 class="Crops__title">Curry Leafs</h3>
+                    <span class="Crops__price">$0.99</span>
+                    <button class="button--flex Crops__button">
+                        <i class="ri-shopping-bag-line"></i>
+                    </button>
+                </article>
+            
+                <article class="Crops__card">
+                    <div class="Crops__circle"></div>
+                    <img src="{% static 'assets/img/bayleaf.png' %}" alt="" class="Crops__img">
+                    <h3 class="Crops__title">Bay Leafs</h3>
+                    <span class="Crops__price">$0.99</span>
+                    <button class="button--flex Crops__button">
+                        <i class="ri-shopping-bag-line"></i>
+                    </button>
+                </article>
+            
+                <article class="Crops__card">
+                    <div class="Crops__circle"></div>
+                    <img src="{% static 'assets/img/rosemary.png' %}" alt="" class="Crops__img">
+                    <h3 class="Crops__title">Rosemary</h3>
+                    <span class="Crops__price">$0.99</span>
+                    <button class="button--flex Crops__button">
+                        <i class="ri-shopping-bag-line"></i>
+                    </button>
+                </article>
+            </div>
+            
+        </section>
+
+            <!--==================== QUESTIONS ====================-->
+            <section class="questions section" id="Guidance">
+                <h2 class="section__title-center questions__title container">
+                    Few general guidance<br>and commom questions asked
+                </h2>
+
+                <div class="questions__container container grid">
+                    <div class="questions__group">
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    What should be the temperature and moisture level to grow vegetables?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Temperature: Most vegetables thrive in temperatures between 60°F to 75°F (15°C to 24°C), 
+                                    with variations based on the plant type.
+                                    <br>
+                                    Moisture: Keep soil consistently moist but not waterlogged for most vegetables.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                        How do i choose the right crop for my house?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Choose a crop for your house based on your local climate, available space,
+                                    personal preferences and budget.<br>
+                                    Anyways you can always contact HOME GROWN for further details and guidance.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    What causes brown crispy leaves?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Brown crispy leaves are often caused by underwatering, high heat, low humidity, 
+                                    or nutrient deficiencies.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="questions__group">
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    How do i setup my new home planting and harvesting system?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                "HOME GROWN" is here for you! We offer the services of our skilled professionals to 
+                                arrange and setup your workspace.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    How do I change the pots?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    We offer a wide array of durable pots to replace your old pot, 
+                                    You can just simply remove and transfer your plant to the new pot. 
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    Why are gnats flying around my plant?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Plants are easy way to add color energy and transform your 
+                                    space but which planet is for you. Choosing the right plant.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== CONTACT ====================-->
+            <section class="contact section container" id="contact">                
+                <div class="contact__container grid">
+                    <div class="contact__box">
+                        <h2 class="section__title">
+                            Reach out to us today <br> via any of the given <br> information
+                        </h2>
+
+                        <div class="contact__data">
+                            <div class="contact__information">
+                                <h3 class="contact__subtitle">Call us for instant support</h3>
+                                <span class="contact__description">
+                                    <i class="ri-phone-line contact__icon"></i>
+                                    +222 444 666
+                                </span>
+                            </div>
+
+                            <div class="contact__information">
+                                <h3 class="contact__subtitle">Write us by mail</h3>
+                                <span class="contact__description">
+                                    <i class="ri-mail-line contact__icon"></i>
+                                    user@email.com
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="" class="contact__form">
+                        <div class="contact__inputs">
+                            <div class="contact__content">
+                                <input type="email" placeholder=" " class="contact__input">
+                                <label for="" class="contact__label">Email</label>
+                            </div>
+
+                            <div class="contact__content">
+                                <input type="text" placeholder=" " class="contact__input">
+                                <label for="" class="contact__label">Subject</label>
+                            </div>
+
+                            <div class="contact__content contact__area">
+                                <textarea name="message" placeholder=" " class="contact__input"></textarea>                              
+                                <label for="" class="contact__label">Message</label>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex">
+                            Send Message
+                            <i class="ri-arrow-right-up-line button__icon"></i>
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">
+                        <i class="ri-plant-fill"></i> HOME GROWN
+                    </a>
+
+                    <h3 class="footer__title">
+                        Subscribe to our newsletter <br> to stay update
+                    </h3>
+
+                    <div class="footer__subscribe">
+                        <input type="email" placeholder="Enter your email" class="footer__input">
+
+                        <button class="button button--flex footer__button">
+                            Subscribe
+                            <i class="ri-arrow-right-up-line button__icon"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Address</h3>
+
+                    <ul class="footer__data">
+                        <li class="footer__information">123 gol</li>
+                        <li class="footer__information">East Blue</li>
+                        <li class="footer__information">Grandline 0526</li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Contact Us</h3>
+
+                    <ul class="footer__data">
+                        <li class="footer__information">+123456789</li>
+                        
+                        <div class="footer__social">
+                            <a href="https://www.facebook.com/" class="footer__social-link">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" class="footer__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="https://twitter.com/" class="footer__social-link">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        We accept all credit cards
+                    </h3>
+
+                    <div class="footer__cards">
+                        <img src="{% static 'assets/img/card1.png' %}" alt="" class="footer__card">
+                        <img src="{% static 'assets/img/card2.png' %}" alt="" class="footer__card">
+                        <img src="{% static 'assets/img/card3.png' %}" alt="" class="footer__card">
+                        <img src="{% static 'assets/img/card4.png' %}" alt="" class="footer__card">                        
+                    </div>
+                </div>
+            </div>
+            
+            <p class="footer__copy">&#169; HOME GROWN. All rigths reserved/Designed by Andrew Vivan X.</p>
+            <p><center>HOME GROWN is a project for Future Ready Talent Internship</center></p>
+        </footer>
+        
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class="ri-arrow-up-fill scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="{% static 'assets/js/scrollreveal.min.js' %}"></script>
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="{% static 'assets/js/main.js' %}"></script>
+    </body>
+</html>
