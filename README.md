@@ -1,4 +1,5 @@
-# homegrown_django
+# Homegrown_django
+## "Homegrown is a static interface which meets dynamic Django backend."
 
 ### Project setup Guide
 You need to have the following in your system.
