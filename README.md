@@ -22,7 +22,7 @@ Django
   > python manage.py runserver
   ```
 * How "Homegrown" will run locally.
-* * Navigate to the Local Address
-    ```
-    http://127.0.0.1:8000/homegrown/
-    ```
+ * Navigate to the Local Address
+  ```
+  http://127.0.0.1:8000/homegrown/
+  ```
